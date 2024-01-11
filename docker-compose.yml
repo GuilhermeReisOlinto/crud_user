@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    build:
+      context: ./crud_user/
+      dockerfile: Dockerfile
+    container_name: crud_user
+    ports:
+      - "8080:8080"
